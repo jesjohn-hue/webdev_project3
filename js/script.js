@@ -1,0 +1,1 @@
+console.log("Project 3 JavaScript loaded successfully.");
