@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #1f2933;
+  line-height: 1.6;
+}
+header,
+main,
+footer {
+  width: 88%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+header {
+  padding: 2rem 0 1rem 0;
+}
+nav {
+  margin-bottom: 2rem;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+nav a {
+  color: #16324f;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+nav a:hover {
+  color: #235789;
+}
+h1 {
+  margin-bottom: 0.75rem;
+  font-size: 2.4rem;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 0.9rem;
+  font-size: 1.5rem;
+}
+h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+header p {
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+main {
+  padding-bottom: 2rem;
+}
+section {
+  margin-bottom: 1.75rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+}
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+p,
+ul,
+figure,
+audio,
+article {
+  margin-bottom: 1rem;
+}
+ul {
+  padding-left: 1.5rem;
+}
+li {
+  margin-bottom: 0.45rem;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+audio {
+  width: 100%;
+}
+footer {
+  padding: 0 0 2rem 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+/* Home page */
+.home-page figure {
+  float: right;
+  width: 40%;
+  margin: 0.25rem 0 1rem 1.5rem;
+}
+.home-page figure img {
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.12);
+}
+.home-page section:first-of-type {
+  background-color: #e6f0fa;
+}
+.home-page h1 {
+  color: #102a43;
+  letter-spacing: 0.03rem;
+}
+.home-page h2 {
+  color: #1d4e89;
+}
+.home-page section:last-of-type {
+  border: 0.12rem solid #bfd7ea;
+}
+/* Resume page */
+.resume-page figure {
+  width: 48%;
+  margin: 1rem auto;
+  text-align: center;
+}
+/* About page */
+.about-page figure {
+  float: right;
+  width: 40%;
+  margin: 0.25rem 0 1rem 1.5rem;
+}
+.about-page h1 {
+  color: #7a3e00;
+}
+.about-page h2 {
+  color: #9a4f10;
+}
+.about-page ul {
+  padding-left: 2rem;
+}
+.about-page figure img {
+  border: 0.18rem solid #e0d1bb;
+}
+.about-page section:nth-of-type(3) {
+  background-color: #fff7eb;
+}
