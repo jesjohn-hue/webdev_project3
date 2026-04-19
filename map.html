@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 3: Map</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
-</head>
-      function initMap() {
-        const selectedLocation = { lat: 41.9981, lng: -87.6556 };
-
-        const map = new google.maps.Map(document.getElementById("map"), {
-          center: selectedLocation,
-          zoom: 14
-        });
-
-        const marker = new google.maps.Marker({
-          position: selectedLocation,
-          map: map
-        });
-      }
-    </script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRYEoTX9IxJHQwiylzN1RvGbXO6T-utC4&callback=initMap"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3: Map</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_REAL_API_KEY&callback=initMap"></script>
   </head>
   <body class="map-page">
     <header>
