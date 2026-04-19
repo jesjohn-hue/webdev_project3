@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 3: Home</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3: Home</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+
   <body class="home-page">
+
     <header>
       <nav>
         <ul>
@@ -18,18 +20,34 @@
           <li><a href="map.html">Map</a></li>
         </ul>
       </nav>
+
       <h1>Jes John Selom Tetedje</h1>
-      <p>Welcome to my ITMD 361 Project 3 website with structured HTML and external CSS.</p>
+      <p>Welcome to my ITMD 361 Project 3 website with structured HTML, CSS, and JavaScript.</p>
     </header>
 
     <main>
+
       <section>
         <h2>Web Development Focus</h2>
-        <figure>
-          <img src="media/coding.jpg" alt="A person coding on a laptop">
-          <figcaption>Building strong foundations in structured web development.</figcaption>
-        </figure>
-        <p>This site is built for ITMD 361 using semantic HTML and external CSS. It demonstrates clean structure, validation compliance, readable layout, and disciplined organization across multiple pages.</p>
+
+        <div class="slider">
+          <button id="prev-btn" type="button">Previous</button>
+
+          <figure>
+            <img id="slider-image" src="media/coding.jpg" alt="A person coding on a laptop">
+            <figcaption id="slider-caption">
+              Building strong foundations in structured web development.
+            </figcaption>
+          </figure>
+
+          <button id="next-btn" type="button">Next</button>
+        </div>
+
+        <p>
+          This site is built for ITMD 361 using semantic HTML, external CSS, and JavaScript.
+          It demonstrates clean structure, validation compliance, responsive layout,
+          and interactive features across multiple pages.
+        </p>
       </section>
 
       <section>
@@ -37,15 +55,20 @@
         <ul>
           <li>Three separate pages with consistent navigation</li>
           <li>Semantic structure using header, main, section, and footer</li>
-          <li>Relative links to local media files stored in a directory</li>
-          <li>Accessibility basics including descriptive alt text</li>
-          <li>W3C validation for each page</li>
+          <li>Responsive design using media queries</li>
+          <li>JavaScript interactivity with a dynamic image slider</li>
+          <li>Google Maps API integration with custom features</li>
+          <li>W3C validation for HTML and CSS</li>
         </ul>
       </section>
 
       <section>
         <h2>What I Am Building This Semester</h2>
-        <p>My goal is to develop a strong technical base that supports more advanced work later in the course. I am focusing on clean structure first, then progressively adding complexity as new topics are introduced.</p>
+        <p>
+          My goal is to develop a strong technical base that supports more advanced work later
+          in the course. I am focusing on clean structure first, then progressively adding
+          complexity as new topics are introduced.
+        </p>
         <ul>
           <li>Writing HTML that is readable, structured, and validated</li>
           <li>Using GitHub with meaningful commits that reflect progress</li>
@@ -57,16 +80,22 @@
 
       <section>
         <h2>Media Requirement</h2>
-        <p>This project includes images and an additional media element to meet the course requirements while keeping all content locally hosted and linked using relative paths.</p>
+        <p>
+          This project includes images and an additional media element to meet the course
+          requirements while keeping all content locally hosted and linked using relative paths.
+        </p>
+
         <audio controls>
           <source src="media/intro.m4a" type="audio/mp4">
           Your browser does not support the audio element.
         </audio>
       </section>
+
     </main>
 
     <footer>
       <p>ITMD 361 Project 3</p>
     </footer>
+
   </body>
 </html>
