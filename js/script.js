@@ -1,32 +1,40 @@
 console.log("Project 3 JavaScript loaded successfully.");
-async function initMap() {
+
+function initMap() {
   const selectedLocation = { lat: 41.9981, lng: -87.6556 };
-  const { Map, InfoWindow } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-  const map = new Map(document.getElementById("map"), {
+
+  const map = new google.maps.Map(document.getElementById("map"), {
     center: selectedLocation,
-    zoom: 14,
+    zoom: 15,
     mapTypeId: "roadmap",
     zoomControl: true,
     streetViewControl: true,
     fullscreenControl: true
   });
-  const infoWindow = new InfoWindow({
+
+  const infoWindow = new google.maps.InfoWindow({
     content: `
       <div>
-        <h3>My Selected Location</h3>
-        <p>This is the featured location on my Project 3 Google Map page.</p>
+        <h3>Loyola University Chicago</h3>
+        <p>This is my selected location for Project 3.</p>
       </div>
     `
   });
-  const marker = new AdvancedMarkerElement({
-    map: map,
+
+  const marker = new google.maps.Marker({
     position: selectedLocation,
+    map: map,
     title: "Selected Location"
   });
-  marker.addListener("click", () => {
-    infoWindow.open({
-      anchor: marker,
+
+  marker.addListener("click", function () {
+    infoWindow.open(map, marker);
+  });
+
+  // FEATURE 3: click anywhere to drop marker
+  map.addListener("click", function (event) {
+    new google.maps.Marker({
+      position: event.latLng,
       map: map
     });
   });
