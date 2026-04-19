@@ -157,66 +157,77 @@ footer {
   border: 0.15rem solid #16324f;
   margin-top: 1rem;
 }
-/* Mobile friendly home page */
-.home-page header,
-.home-page main,
-.home-page footer {
-  width: 92%;
+/* Mobile-friendly home page */
+
+.home-page nav ul {
+  text-align: center;
 }
+
 .home-page nav li {
   display: block;
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
 }
+
 .home-page h1 {
   font-size: 2rem;
 }
+
 .home-page h2 {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
+
 .home-page figure {
   float: none;
   width: 100%;
   margin: 1rem 0;
 }
-.home-page audio {
+
+.home-page figure img {
   width: 100%;
 }
+
+.home-page section {
+  padding: 1rem;
+}
+
+.home-page header,
+.home-page main,
+.home-page footer {
+  width: 92%;
+}
+
 @media screen and (min-width: 37.5rem) {
-  .home-page header,
-  .home-page main,
-  .home-page footer {
-    width: 88%;
-  }
   .home-page nav li {
     display: inline-block;
     margin: 0 0.75rem;
   }
+
   .home-page h1 {
     font-size: 2.5rem;
   }
+
   .home-page h2 {
     font-size: 1.6rem;
   }
 
   .home-page figure {
     float: right;
-    width: 48%;
+    width: 50%;
     margin: 0 0 1rem 1.25rem;
   }
 
   .home-page section {
-    padding: 1.75rem;
+    padding: 1.5rem;
+  }
+
+  .home-page header,
+  .home-page main,
+  .home-page footer {
+    width: 88%;
   }
 }
 
 @media screen and (min-width: 64rem) {
-  .home-page header,
-  .home-page main,
-  .home-page footer {
-    width: 85%;
-    max-width: 75rem;
-  }
-
   .home-page nav li {
     margin: 0 1rem;
   }
@@ -236,5 +247,12 @@ footer {
 
   .home-page section {
     padding: 2rem;
+  }
+
+  .home-page header,
+  .home-page main,
+  .home-page footer {
+    width: 85%;
+    max-width: 75rem;
   }
 }
